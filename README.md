@@ -1,57 +1,96 @@
-Windows Server Enterprise Support Lab
-Overview
-This project demonstrates enterprise IT support and systems administration fundamentals using Windows Server 2025 and Windows 11 virtual machines in UTM on Apple Silicon. The lab simulates a small business environment with centralized identity management, networking services, domain-joined clients, shared drive permissions, and common IT support troubleshooting scenarios.
+# Windows Server Enterprise Support Lab
 
-Lab Architecture
-Windows Server 2025 (SERVER01)
+# Overview
+This project demonstrates enterprise IT support and systems administration fundamentals using Windows Server 2025 and Windows 11 virtual machines in UTM on Apple Silicon.
 
-Active Directory Domain Services
-DNS Server
-DHCP Server
+The lab simulates a small business environment with:
+- Centralized identity management
+- Networking services
+- Domain-joined clients
+- Shared drive permissions
+- Common IT support troubleshooting scenarios
+# Lab Architecture
+# Windows Server 2025 — SERVER01
+- Active Directory Domain Services
+- DNS Server
+- DHCP Server
+# Windows 11 Client — CLIENT01
+- Domain-joined workstation
+- DHCP client
+- Remote Desktop client
 
-Windows 11 Client (CLIENT01)
+# Network
+- Internal virtual network using UTM
 
-Domain-joined workstation
-DHCP client
-Remote Desktop client
+# Technologies Used
+| Category | Technology |
+|---|---|
+| Servers & Clients | Windows Server 2025, Windows 11 |
+| Directory Services | Active Directory |
+| Networking | DNS, DHCP |
+| Remote Access | Remote Desktop Protocol (RDP) |
+| Virtualization | UTM (Apple Silicon) |
+| Version Control | GitHub |
+# Configurations Completed
+# Active Directory & Domain
 
-Internal virtual network using UTM.
+- Installed and configured Active Directory Domain Services
+- Created domain: `prakashlab.local`
+- Created organizational users and security groups
+- Joined Windows 11 client to domain
+# Networking
 
-Technologies Used
-Windows Server 2025, Windows 11, Active Directory, DNS, DHCP, Remote Desktop Protocol (RDP), UTM Virtualization, GitHub
+- Configured DNS services
+- Configured DHCP scope and leasing
+# Access & Permissions
+ Configured shared network drives and permissions
+# Testing & Verification
+- Tested DNS resolution with `nslookup`
+- Tested DHCP functionality with `ipconfig /release` and `ipconfig /renew`
+- Tested Remote Desktop connectivity
+- 
+# User Accounts
+| Username | Department |
+|---|---|
+| john.support | IT Support |
+| sarah.finance | Finance |
+| restricted.user | Standard User |
 
-Configurations Completed
+# Security Groups
+| Group Name | Description |
+|---|---|
+| IT-Support | IT support staff |
+| Finance | Finance department users |
+| Standard-Users | General restricted users |
 
-Installed and configured Active Directory Domain Services
-Created domain: prakashlab.local
-Configured DNS and DHCP scope/leasing
-Created organizational users and security groups
-Joined Windows 11 client to domain
-Configured shared network drives and permissions
-Tested DNS resolution (nslookup), DHCP renewal (ipconfig /release & /renew), and Remote Desktop connectivity
+# Troubleshooting Scenarios
 
+| Scenario | Area |
+|---|---|
+| Password reset and account unlock | Active Directory |
+| DNS resolution verification | Networking |
+| DHCP lease renewal troubleshooting | Networking |
+| Shared drive permission testing | File Services |
+| Access denied troubleshooting | Permissions |
+| Remote Desktop connectivity testing | Remote Access |
 
-User Accounts & Security Groups
-UsernameDepartmentGroupjohn.supportIT SupportIT-Supportsarah.financeFinanceFinancerestricted.userStandard UserStandard-Users
+# Skills Demonstrated
+# Administration
+- Windows Server administration
+- Active Directory management
+- Domain administration
 
-Troubleshooting Scenarios
+# Networking
+- Enterprise networking fundamentals
+- DNS and DHCP configuration
 
-Password reset and account unlock
-DNS resolution verification
-DHCP lease renewal troubleshooting
-Shared drive permission testing
-Access denied troubleshooting
-Remote Desktop connectivity testing
+# Support & Security
+- IT support troubleshooting
+- User and permissions management
+- Infrastructure documentation
 
+# Screenshots
+Screenshots and configuration walkthroughs will be uploaded throughout the project build.
 
-Skills Demonstrated
-
-Windows Server administration & Active Directory management
-Enterprise networking fundamentals (DNS, DHCP, RDP)
-IT support troubleshooting
-User, group, and permissions management
-Domain administration and infrastructure documentation
-
-
-Project Goal
+# Project Goal
 To strengthen practical desktop support and systems administration skills in a simulated enterprise environment.
